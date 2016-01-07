@@ -855,39 +855,44 @@
     color: #0077FF;
   }
   
-  h1 { font-size: 6.0rem; }
-  h2 { font-size: 5.0rem; }
-  h3 { font-size: 4.3rem; }
-  h4 { font-size: 3.0rem; }
-  h5 { font-size: 2.8rem; }
-  h6 { font-size: 1.8rem; }
+  .large-text { font-size: 6.0rem; }
+  .medium-text { font-size: 4.8rem; }
+  .small-text { font-size: 3.8rem; }
+  
+  .container {
+    padding: 1rem;
+    width: 100%;
+  }
   
   @media (min-width: 550px) {
+    .large-text { font-size: 4.0rem; }
+    .medium-text { font-size: 3.0rem; }
+    .small-text { font-size: 1.8rem; }
+  
     .container {
-      padding: 1rem;
-      width: 100%;
+      width: 80%;
     }
   }
 </style>
 </head><body><div class="container">
   <div class="row section">
-    <h2>Nowletter is newsletters by text</h2>
+    <div class="large-text">Nowletter is newsletters by text</div>
   </div>
   <div class="row section">
-    <h4>Text NEW to 1-855-336-1427 to start</h4>
+    <div class="medium-text">Text NEW to 1-855-336-1427 to start</div>
   </div>
   <div class="row section">
-    <h5>First 100 texts free. $10/mo for 1000 texts after that.</h5>
+    <div class="medium-text">First 100 texts free. $10/mo for 1000 texts after that.</div>
   </div>
   <hr>
-    <p>
+    <div class="small-text">
       Questions? Need help?
       <a class="email-link" mailto="support@nowletter.com">support@nowletter.com</a>
-    </p>
-    <p>
+    </div>
+    <div class="small-text">
       Want a feature?
       <a class="email-link" mailto="product@nowletter.com">product@nowletter.com</a>
-    </p>
+    </div>
   
 </div>
 </body></html>
